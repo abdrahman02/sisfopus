@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(./open_sans/OpenSans-Regular.ttf) format(truetype),
+        url(./open_sans/OpenSans-Italic.ttf) format(truetype),
+        url(./open_sans/OpenSans-Light.ttf) format(truetype),
+        url(./open_sans/OpenSans-LightItalic.ttf) format(truetype),
+        url(./open_sans/OpenSans-SemiBold.ttf) format(truetype),
+        url(./open_sans/OpenSans-SemiBoldItalic.ttf) format(truetype),
+        url(./open_sans/OpenSans-Bold.ttf) format(truetype),
+        url(./open_sans/OpenSans-BoldItalic.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
