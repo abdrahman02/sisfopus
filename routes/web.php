@@ -54,3 +54,8 @@ Route::get('/transaksi/sedang-dipinjam', function () {
 Route::get('/transaksi/sudah-dikembalikan', function () {
     return view('backend.transaksi.sudah-dikembalikan');
 });
+
+
+Route::get('/anggota', function() {
+    return view('backend.anggota.index');
+});
