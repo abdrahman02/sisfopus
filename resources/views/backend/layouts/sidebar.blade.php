@@ -1,4 +1,4 @@
-<aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+<aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 shadow"
     id="sidenav-main">
     <div class="sidenav-header">
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
@@ -40,21 +40,21 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ Request::is('member') ? 'active' : '' }}" href="/member">
+                <a class="nav-link {{ Request::is('anggota') ? 'active' : '' }}" href="/anggota">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-app text-info text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Member</span>
+                    <span class="nav-link-text ms-1">Anggota</span>
                 </a>
             </li>
         </ul>
-    </div>
-    <div class="sidenav-footer mx-3">
-        <div class="docs-info d-flex flex-column">
-            <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Masuk sebagai :</h6>
-            <span class="text-xs mx-auto mt-1 mb-2 font-weight-bold text-success">Administrator</span>
+        <div class="sidenav-footer mx-3">
+            <div class="docs-info d-flex flex-column">
+                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Masuk sebagai :</h6>
+                <span class="text-xs mx-auto mt-1 mb-2 font-weight-bold text-success">Administrator</span>
+            </div>
+            <a href="#" class="btn bg-gradient-danger btn-sm w-100 mt-2">SIGN OUT</a>
         </div>
-        <a href="#" class="btn bg-gradient-danger btn-sm w-100 mt-2">SIGN OUT</a>
     </div>
 </aside>
