@@ -5,9 +5,9 @@
     Back
 </a>
 <a href="#" class="btn btn-md bg-success me-3 link-light float-end" data-bs-toggle="modal"
-    data-bs-target="#tbhPeminjaman" aria-pressed="true">
+    data-bs-target="#tbhPengembalian" aria-pressed="true">
     <i class="fa-solid fa-circle-plus"></i>&nbsp
-    Tambah
+    Pengembalian
 </a>
 <div class="row">
     <div class="col-lg-12 mb-lg-0 mb-4">
