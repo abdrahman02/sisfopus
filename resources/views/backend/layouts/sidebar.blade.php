@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-<aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 shadow"
-=======
 <aside
     class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 shadow"
->>>>>>> 3042ce88bc0f9bba4130fca36e8f795c2eddd305
     id="sidenav-main">
     <div class="sidenav-header">
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
@@ -54,12 +50,12 @@
                 </a>
             </li>
         </ul>
-        <div class="sidenav-footer mx-3">
-            <div class="docs-info d-flex flex-column">
-                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Masuk sebagai :</h6>
-                <span class="text-xs mx-auto mt-1 mb-2 font-weight-bold text-success">Administrator</span>
-            </div>
-            <a href="#" class="btn bg-gradient-danger btn-sm w-100 mt-2">SIGN OUT</a>
+    </div>
+    <div class="sidenav-footer mx-3">
+        <div class="docs-info d-flex flex-column">
+            <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Masuk sebagai :</h6>
+            <span class="text-xs mx-auto mt-1 mb-2 font-weight-bold text-success">Administrator</span>
         </div>
+        <a href="#" class="btn bg-gradient-danger btn-sm w-100 mt-2">SIGN OUT</a>
     </div>
 </aside>
