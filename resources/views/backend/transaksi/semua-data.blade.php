@@ -1,11 +1,11 @@
 @extends('backend.layouts.main')
 @section('content')
-<a href="/books" class="btn btn-md bg-warning me-3 link-light" aria-pressed="true">
+<a href="/transaksi" class="btn btn-md bg-warning me-3 link-light" aria-pressed="true">
     <i class="fa-solid fa-circle-left"></i>&nbsp
     Back
 </a>
-<a href="#" class="btn btn-md bg-success me-3 link-light float-end" data-bs-toggle="modal" data-bs-target="#tbhKatalog"
-    aria-pressed="true">
+<a href="#" class="btn btn-md bg-success me-3 link-light float-end" data-bs-toggle="modal"
+    data-bs-target="#tbhPeminjaman" aria-pressed="true">
     <i class="fa-solid fa-circle-plus"></i>&nbsp
     Tambah
 </a>
@@ -13,7 +13,7 @@
     <div class="col-lg-12 mb-lg-0 mb-4">
         <div class="card shadow">
             <div class="card-header pb-0 pt-3 bg-transparent">
-                <h6 class="text-capitalize">Tabel Katalog Buku</h6>
+                <h6 class="text-capitalize">Tabel Peminjaman Buku</h6>
             </div>
             <div class="card-body p-3">
                 <div class="table-responsive">
@@ -25,16 +25,19 @@
                                 </th>
                                 <th scope="col"
                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                    Nama Anggota</th>
+                                <th scope="col"
+                                    class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                     Judul Buku</th>
                                 <th scope="col"
                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                    Stok</th>
+                                    Tgl Peminjaman</th>
                                 <th scope="col"
                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                    Rak</th>
+                                    Tgl Pengembalian</th>
                                 <th scope="col"
                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                    Harga</th>
+                                    Denda</th>
                                 <th scope="col"
                                     class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     Action</th>
@@ -46,16 +49,36 @@
                                     <span class="text-secondary text-xs font-weight-bold">1</span>
                                 </td>
                                 <td>
+                                    <div class="d-flex px-2 py-1">
+                                        <div>
+                                            <img src="{{ asset('backend/assets/img/team-2.jpg') }}"
+                                                class="avatar avatar-sm me-3" alt="user1">
+                                        </div>
+                                        <div class="d-flex flex-column text-start">
+                                            <h6 class="mb-0 text-sm">Rudi Santoso</h6>
+                                            <p class="text-xs text-secondary mb-0">rudi@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
                                     <span class="text-secondary text-xs font-weight-bold">Buku wajib orang miskin</span>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">30</span>
+                                    <span class="text-secondary text-xs font-weight-bold mb-1 d-block">27/01/2023</span>
+                                    <a href="#" target="_blank">
+                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek
+                                            bukti</p>
+                                    </a>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">1</span>
+                                    <span class="text-secondary text-xs font-weight-bold mb-1 d-block">30/01/2023</span>
+                                    <a href="#" target="_blank">
+                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek
+                                            bukti</p>
+                                    </a>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">Rp.100.000</span>
+                                    <span class="text-secondary text-xs font-weight-bold">-</span>
                                 </td>
                                 <td class="align-middle text-center text-lg">
                                     <a href="#" class="badge badge-lg bg-gradient-info me-3 link-light">
@@ -79,16 +102,34 @@
                                     <span class="text-secondary text-xs font-weight-bold">2</span>
                                 </td>
                                 <td>
+                                    <div class="d-flex px-2 py-1">
+                                        <div>
+                                            <img src="{{ asset('backend/assets/img/team-3.jpg') }}"
+                                                class="avatar avatar-sm me-3" alt="user1">
+                                        </div>
+                                        <div class="d-flex flex-column text-start">
+                                            <h6 class="mb-0 text-sm">Syahriadi</h6>
+                                            <p class="text-xs text-secondary mb-0">ardi@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
                                     <span class="text-secondary text-xs font-weight-bold">Pembelajaran Dasar HTML</span>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">28</span>
+                                    <span class="text-secondary text-xs font-weight-bold mb-1 d-block">27/01/2023</span>
+                                    <a href="#" target="_blank">
+                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek
+                                            bukti</p>
+                                    </a>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">2</span>
+                                    <span
+                                        class="badge badge-sm bg-gradient-secondary text-xs fw-light mb-0 d-block">Belum
+                                        dikembalikan</span>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">Rp.200.000</span>
+                                    <span class="text-secondary text-xs font-weight-bold">-</span>
                                 </td>
                                 <td class="align-middle text-center text-lg">
                                     <a href="#" class="badge badge-lg bg-gradient-info me-3 link-light">
@@ -112,16 +153,36 @@
                                     <span class="text-secondary text-xs font-weight-bold">3</span>
                                 </td>
                                 <td>
+                                    <div class="d-flex px-2 py-1">
+                                        <div>
+                                            <img src="{{ asset('backend/assets/img/team-4.jpg') }}"
+                                                class="avatar avatar-sm me-3" alt="user1">
+                                        </div>
+                                        <div class="d-flex flex-column text-start">
+                                            <h6 class="mb-0 text-sm">Ferizal</h6>
+                                            <p class="text-xs text-secondary mb-0">feri@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
                                     <span class="text-secondary text-xs font-weight-bold">Matematika Sains</span>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">18</span>
+                                    <span class="text-secondary text-xs font-weight-bold mb-1 d-block">27/01/2023</span>
+                                    <a href="#" target="_blank">
+                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek
+                                            bukti</p>
+                                    </a>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">2</span>
+                                    <span class="text-secondary text-xs font-weight-bold mb-1 d-block">19/02/2023</span>
+                                    <a href="#" target="_blank">
+                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek
+                                            bukti</p>
+                                    </a>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">Rp.200.000</span>
+                                    <span class="text-secondary text-xs font-weight-bold">Rp.20.000</span>
                                 </td>
                                 <td class="align-middle text-center text-lg">
                                     <a href="#" class="badge badge-lg bg-gradient-info me-3 link-light">

@@ -21,6 +21,7 @@ Route::get('/dashboard', function () {
     return view('backend.dashboard.dashboard');
 });
 
+
 Route::get('/books', function () {
     return view('backend.books.index');
 });
@@ -35,4 +36,21 @@ Route::get('/books/kategori', function () {
 
 Route::get('/books/katalog', function () {
     return view('backend.books.katalog');
+});
+
+
+Route::get('/transaksi', function () {
+    return view('backend.transaksi.index');
+});
+
+Route::get('/transaksi/semua-data', function () {
+    return view('backend.transaksi.semua-data');
+});
+
+Route::get('/transaksi/sedang-dipinjam', function () {
+    return view('backend.transaksi.sedang-dipinjam');
+});
+
+Route::get('/transaksi/sudah-dikembalikan', function () {
+    return view('backend.transaksi.sudah-dikembalikan');
 });
