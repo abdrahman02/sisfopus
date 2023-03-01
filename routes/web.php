@@ -59,3 +59,8 @@ Route::get('/transaksi/sudah-dikembalikan', function () {
 Route::get('/anggota', function() {
     return view('backend.anggota.index');
 });
+
+
+Route::get('/login', function() {
+    return view('auth.index');
+});
