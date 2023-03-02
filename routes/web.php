@@ -21,6 +21,21 @@ Route::get('/dashboard', function () {
     return view('backend.dashboard.dashboard');
 });
 
+Route::get('/home', function () {
+    return view('frontend.pages.landings');
+});
+Route::get('/tentang', function () {
+    return view('frontend.pages.about');
+});
+
+Route::get('/bantuan', function () {
+    return view('frontend.pages.bantuan');
+});
+
+Route::get('/katalog', function () {
+    return view('frontend.pages.katalog');
+});
+
 
 Route::get('/books', function () {
     return view('backend.books.index');
@@ -64,3 +79,4 @@ Route::get('/anggota', function() {
 Route::get('/login', function() {
     return view('auth.index');
 });
+
