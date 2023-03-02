@@ -115,4 +115,79 @@
 <br>
 <br>
 <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- Tambah Data --}}
+<div class="modal fade" id="tbhRak" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="card card-plain">
+                    <div class="card-header pb-0 text-left">
+                        <h4 class="font-weight-bolder text-info text-gradient">Form penambahan rak</h4>
+                    </div>
+                    <div class="card-body">
+                        <form role="form text-left">
+                            <label for="rak">Nomor Rak</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Masukkan nomor rak..."
+                                    aria-label="rak" required autofocus>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn bg-gradient-info mt-4 mb-0">Tambah</button>
+                                <button type="button" class="btn bg-gradient-danger mt-4 mb-0"
+                                    data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{{-- Ubah Data --}}
+<div class="modal fade" id="ubhRak" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="card card-plain">
+                    <div class="card-header pb-0 text-left">
+                        <h4 class="font-weight-bolder text-info text-gradient">Form penambahan rak</h4>
+                    </div>
+                    <div class="card-body">
+                        <form role="form text-left">
+                            <label for="rak">Nomor Rak</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Masukkan nomor rak..."
+                                    aria-label="rak" required autofocus>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn bg-gradient-info mt-4 mb-0">Tambah</button>
+                                <button type="button" class="btn bg-gradient-danger mt-4 mb-0"
+                                    data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

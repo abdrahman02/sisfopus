@@ -4,7 +4,7 @@
     <i class="fa-solid fa-circle-left"></i>&nbsp
     Back
 </a>
-<a href="#" class="btn btn-md bg-success me-3 link-light float-end" data-bs-toggle="modal" data-bs-target="#tbhKatalog"
+<a href="#" class="btn btn-md bg-success me-3 link-light float-end" data-bs-toggle="modal" data-bs-target="#tbhBuku"
     aria-pressed="true">
     <i class="fa-solid fa-circle-plus"></i>&nbsp
     Tambah
@@ -159,4 +159,225 @@
 <br>
 <br>
 <br>
+
+
+
+
+
+
+{{-- Lihat Data --}}
+<div class="modal fade" id="lhtBuku" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="card card-plain">
+                    <div class="card-header pb-0 text-left">
+                        <h4 class="font-weight-bolder text-info text-gradient">Detail Buku</h4>
+                    </div>
+                    <div class="card-body">
+                        <form role="form text-left">
+                            <label for="judul_buku">Judul Buku</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control-plaintext-plaintext" name="judul" id="judul"
+                                    aria-label="judul_buku" readonly>
+                            </div>
+
+                            <label for="pengarang">Pengarang</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control-plaintext" name="pengarang" name="pengarang"
+                                    aria-label="pengarang" readonly>
+                            </div>
+
+                            <div class="col-lg-12 d-flex justify-content-between">
+                                <div class="col-lg-5">
+                                    <label for="isbn">ISBN</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control-plaintext" name="isbn" name="isbn"
+                                            aria-label="ISBN" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <label for="stok">Stok Buku</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control-plaintext" name="stok" name="stok"
+                                            aria-label="stok" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 d-flex justify-content-between">
+                                <div class="col-lg-5">
+                                    <label for="penerbit">Penerbit</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control-plaintext" name="penerbit"
+                                            name="penerbit" aria-label="penerbit" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <label for="thn_terbit">Tahun Terbit</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control-plaintext" name="thn_terbit"
+                                            name="thn_terbit" aria-label="thn_terbit" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-end">
+                                <button type="submit" class="btn bg-gradient-info mt-4 mb-0">Tambah</button>
+                                <button type="button" class="btn bg-gradient-danger mt-4 mb-0"
+                                    data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{{-- Tambah Data --}}
+<div class="modal fade" id="tbhBuku" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="card card-plain">
+                    <div class="card-header pb-0 text-left">
+                        <h4 class="font-weight-bolder text-info text-gradient">Form penambahan buku</h4>
+                    </div>
+                    <div class="card-body">
+                        <form role="form text-left">
+                            <label for="judul_buku">Judul Buku</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" name="judul" id="judul"
+                                    placeholder="Masukkan judul buku..." aria-label="judul_buku" required autofocus>
+                            </div>
+
+                            <label for="pengarang">Pengarang</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" name="pengarang" name="pengarang"
+                                    placeholder="Masukkan nama pengarang..." aria-label="pengarang" required>
+                            </div>
+
+                            <div class="col-lg-12 d-flex justify-content-between">
+                                <div class="col-lg-5">
+                                    <label for="isbn">ISBN</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="isbn" name="isbn"
+                                            placeholder="Masukkan ISBN buku..." aria-label="ISBN" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <label for="stok">Stok Buku</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="stok" name="stok"
+                                            placeholder="Masukkan stok buku..." aria-label="stok" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 d-flex justify-content-between">
+                                <div class="col-lg-5">
+                                    <label for="penerbit">Penerbit</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="penerbit" name="penerbit"
+                                            placeholder="Masukkan penerbit buku..." aria-label="penerbit" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <label for="thn_terbit">Tahun Terbit</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="thn_terbit" name="thn_terbit"
+                                            placeholder="Masukkan tahun terbit..." aria-label="thn_terbit" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-end">
+                                <button type="submit" class="btn bg-gradient-info mt-4 mb-0">Tambah</button>
+                                <button type="button" class="btn bg-gradient-danger mt-4 mb-0"
+                                    data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{{-- Ubah Data --}}
+<div class="modal fade" id="ubhBuku" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="card card-plain">
+                    <div class="card-header pb-0 text-left">
+                        <h4 class="font-weight-bolder text-info text-gradient">Form perubahan katalog</h4>
+                    </div>
+                    <div class="card-body">
+                        <form role="form text-left">
+                            <label for="judul_buku">Judul Buku</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" name="judul" id="judul"
+                                    placeholder="Masukkan judul buku..." aria-label="judul_buku" required autofocus>
+                            </div>
+
+                            <label for="pengarang">Pengarang</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" name="pengarang" name="pengarang"
+                                    placeholder="Masukkan nama pengarang..." aria-label="pengarang" required>
+                            </div>
+
+                            <div class="col-lg-12 d-flex justify-content-between">
+                                <div class="col-lg-5">
+                                    <label for="isbn">ISBN</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="isbn" name="isbn"
+                                            placeholder="Masukkan ISBN buku..." aria-label="ISBN" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <label for="stok">Stok Buku</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="stok" name="stok"
+                                            placeholder="Masukkan stok buku..." aria-label="stok" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 d-flex justify-content-between">
+                                <div class="col-lg-5">
+                                    <label for="penerbit">Penerbit</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="penerbit" name="penerbit"
+                                            placeholder="Masukkan penerbit buku..." aria-label="penerbit" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <label for="thn_terbit">Tahun Terbit</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="thn_terbit" name="thn_terbit"
+                                            placeholder="Masukkan tahun terbit..." aria-label="thn_terbit" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-end">
+                                <button type="submit" class="btn bg-gradient-info mt-4 mb-0">Tambah</button>
+                                <button type="button" class="btn bg-gradient-danger mt-4 mb-0"
+                                    data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection
