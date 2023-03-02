@@ -55,6 +55,11 @@
                                             <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">
                                                 Login
                                             </button>
+                                            <a href="/home"
+                                                class="btn btn-lg btn-outline-warning btn-lg w-100 mt-4 mb-0 fw-light">
+                                                <i class="fa-solid fa-circle-chevron-left"></i>&nbsp
+                                                Back to home
+                                            </a>
                                         </div>
                                     </form>
                                 </div>
