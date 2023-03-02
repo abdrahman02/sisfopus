@@ -39,8 +39,8 @@
     </main>
     <div class="fixed-plugin">
         {{-- Button roda gigi --}}
-        <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
-            <i class="fa fa-cog py-2"> </i>
+        <a class="fixed-plugin-button text-dark position-fixed px-3 py-2 shadow-lg">
+            <i class="fa fa-cog py-2"></i>
         </a>
         {{-- End button roda gigi --}}
         {{-- Settings panel --}}
@@ -62,6 +62,7 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
     </script>
+
     <!-- Github buttons -->
     <script src="{{ asset('backend/assets/js/buttons.js') }}"></script>
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->

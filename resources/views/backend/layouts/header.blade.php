@@ -33,8 +33,8 @@
 
                     <div class="dropdown-menu dropdown-menu-end px-2 py-3 me-sm-n4" id="dropdownMenuAvatar">
                         <a class="dropdown-item border-radius-md" href="#">
-                            <i class="fa-solid fa-gear fixed-plugin-button-nav cursor-pointer text-info"></i>&nbsp
-                            Settings
+                            <i class="fa-regular fa-user fixed-plugin-button-nav cursor-pointer text-info"></i>&nbsp
+                            My profile
                         </a>
                         <a class="dropdown-item border-radius-md" href="#"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
