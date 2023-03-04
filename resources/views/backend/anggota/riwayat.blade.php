@@ -40,7 +40,7 @@
     <div class="col-lg-12 mb-lg-0 mb-4">
         <div class="card shadow">
             <div class="card-header pb-0 pt-3 bg-transparent d-flex justify-content-between">
-                <h6 class="text-capitalize">Keranjang Peminjaman Buku</h6>
+                <h6 class="text-capitalize">Riwayat Peminjaman Buku</h6>
             </div>
             <div class="card-body p-3">
                 <div class="table-responsive">
