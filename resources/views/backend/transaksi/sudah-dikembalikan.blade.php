@@ -28,7 +28,7 @@
                                     Nama Anggota</th>
                                 <th scope="col"
                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                    Judul Buku</th>
+                                    Kode Peminjaman</th>
                                 <th scope="col"
                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                     Tgl Peminjaman</th>
@@ -61,7 +61,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">Buku wajib orang miskin</span>
+                                    <span class="text-secondary text-xs font-weight-bold">5667</span>
                                 </td>
                                 <td>
                                     <span class="text-secondary text-xs font-weight-bold mb-1 d-block">27/01/2023</span>
@@ -114,7 +114,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">Matematika Sains</span>
+                                    <span class="text-secondary text-xs font-weight-bold">5666</span>
                                 </td>
                                 <td>
                                     <span class="text-secondary text-xs font-weight-bold mb-1 d-block">27/01/2023</span>

@@ -28,7 +28,7 @@
                                     Nama Anggota</th>
                                 <th scope="col"
                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                    Judul Buku</th>
+                                    Kode Peminjaman</th>
                                 <th scope="col"
                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                     Tgl Peminjaman</th>
@@ -58,7 +58,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <span class="text-secondary text-xs font-weight-bold">Pembelajaran Dasar HTML</span>
+                                    <span class="text-secondary text-xs font-weight-bold">5668</span>
                                 </td>
                                 <td>
                                     <span class="text-secondary text-xs font-weight-bold mb-1 d-block">27/01/2023</span>
