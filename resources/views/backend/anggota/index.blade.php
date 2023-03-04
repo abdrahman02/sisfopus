@@ -29,10 +29,10 @@
                                     NISN</th>
                                 <th scope="col"
                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                    Peminjaman</th>
+                                    Peminjaman & Pengembalian</th>
                                 <th scope="col"
                                     class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                    Pengembalian</th>
+                                    Kartu Anggota</th>
                                 <th scope="col"
                                     class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     Action</th>
@@ -59,13 +59,13 @@
                                     <span class="text-secondary text-xs font-weight-bold">292383293282923</span>
                                 </td>
                                 <td>
-                                    <a href="#" target="_blank">
+                                    <a href="/anggota/riwayat/1">
                                         <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek</p>
                                     </a>
                                 </td>
                                 <td>
                                     <a href="#" target="_blank">
-                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek</p>
+                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cetak</p>
                                     </a>
                                 </td>
                                 <td class="align-middle text-center text-lg">
@@ -105,13 +105,13 @@
                                     <span class="text-secondary text-xs font-weight-bold">219308249027922</span>
                                 </td>
                                 <td>
-                                    <a href="#" target="_blank">
+                                    <a href="/anggota/riwayat/1">
                                         <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek</p>
                                     </a>
                                 </td>
                                 <td>
                                     <a href="#" target="_blank">
-                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek</p>
+                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cetak</p>
                                     </a>
                                 </td>
                                 <td class="align-middle text-center text-lg">
@@ -151,13 +151,13 @@
                                     <span class="text-secondary text-xs font-weight-bold">219308249027922</span>
                                 </td>
                                 <td>
-                                    <a href="#" target="_blank">
+                                    <a href="/anggota/riwayat/1">
                                         <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek</p>
                                     </a>
                                 </td>
                                 <td>
                                     <a href="#" target="_blank">
-                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cek</p>
+                                        <p class="badge badge-sm bg-gradient-primary text-xs fw-light mb-0">Cetak</p>
                                     </a>
                                 </td>
                                 <td class="align-middle text-center text-lg">

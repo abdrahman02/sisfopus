@@ -79,6 +79,9 @@ Route::get('/anggota', function() {
     return view('backend.anggota.index');
 });
 
+Route::get('/anggota/riwayat/1', function() {
+    return view('backend.anggota.riwayat');
+});
 
 Route::get('/login', function() {
     return view('auth.index');

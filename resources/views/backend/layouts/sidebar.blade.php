@@ -7,7 +7,7 @@
         <a class="navbar-brand m-0" href="/home">
             <img src="{{ asset('backend/assets/img/Logo-Tut-Wuri-Handayani.png') }}" class="navbar-brand-img h-100"
                 alt="main_logo" />
-            <span class="ms-1 font-weight-bold">SISFO PUS</span>
+            <span class="ms-1 font-weight-bold">SISFOPUS</span>
         </a>
     </div>
     <hr class="horizontal dark mt-0">
