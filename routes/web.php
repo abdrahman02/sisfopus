@@ -70,6 +70,10 @@ Route::get('/transaksi/sudah-dikembalikan', function () {
     return view('backend.transaksi.sudah-dikembalikan');
 });
 
+Route::get('/transaksi/keranjang/1', function() {
+    return view('backend.transaksi.keranjang');
+});
+
 
 Route::get('/anggota', function() {
     return view('backend.anggota.index');

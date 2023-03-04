@@ -4,13 +4,13 @@
     <i class="fa-solid fa-circle-left"></i>&nbsp
     Back
 </a>
-<a href="#" class="btn btn-md bg-success me-3 link-light float-end" data-bs-toggle="modal"
-    data-bs-target="#tbhPeminjaman" aria-pressed="true">
+<a href="#" class="btn btn-md bg-success me-3 link-light float-end" data-bs-toggle="modal" data-bs-target="#tbhData"
+    aria-pressed="true">
     <i class="fa-solid fa-circle-plus"></i>&nbsp
     Peminjaman
 </a>
-<a href="#" class="btn btn-md bg-success me-3 link-light float-end" data-bs-toggle="modal"
-    data-bs-target="#tbhPengembalian" aria-pressed="true">
+<a href="#" class="btn btn-md bg-success me-3 link-light float-end" data-bs-toggle="modal" data-bs-target="#tbhData"
+    aria-pressed="true">
     <i class="fa-solid fa-circle-plus"></i>&nbsp
     Pengembalian
 </a>
@@ -225,4 +225,67 @@
 <br>
 <br>
 <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- Tambah Data --}}
+<div class="modal fade" id="tbhData" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="card card-plain">
+                    <div class="card-header pb-0 text-left">
+                        <h4 class="font-weight-bolder text-info text-gradient">Pilih user yang ingin melakukan transaksi
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <form role="form text-left">
+                            <label for="nisn">NISN Anggota</label>
+                            <div class="input-group mb-3 flex-column">
+                                <select class="form-control js-example-basic-single" id="nisn" name='nisn'>
+                                    <option>Default select</option>
+                                    <option>lorem</option>
+                                    <option>Default agusoko</option>
+                                    <option>daulo diaoi uidoko</option>
+                                    <option>Default select</option>
+                                    <option>lorem</option>
+                                    <option>Default agusoko</option>
+                                    <option>daulo diaoi uidoko</option>
+                                </select>
+
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn bg-gradient-info mt-4 mb-0">Lanjutkan</button>
+                                <button type="button" class="btn bg-gradient-danger mt-4 mb-0"
+                                    data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
+
+@push('jsAddon')
+<script>
+    $(document).ready(function() {
+        $('#nisn').select2({
+            dropdownParent: $('#tbhData'),
+            placeholder: 'Cari nama anggota...',
+            allowClear: true
+        });
+    })
+</script>
+@endpush

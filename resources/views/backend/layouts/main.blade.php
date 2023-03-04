@@ -15,6 +15,8 @@
     <!-- Font Awesome Icons -->
     <script src="{{ asset('backend/icons/kitfontawesome.js') }}"></script>
     <link href="{{ asset('backend/assets/css/nucleo-svg.css') }}" rel="stylesheet" />
+    {{-- Select2 Plugin --}}
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="{{ asset('backend/assets/css/argon-dashboard.css') }}" rel="stylesheet" />
 </head>
@@ -47,11 +49,14 @@
         @include('backend.layouts.settings-panel')
     </div>
     <!--   Core JS Files   -->
+    <script src="{{ asset('backend/assets/js/core/jquery-3.6.3.min.js') }}"></script>
     <script src="{{ asset('backend/assets/js/core/popper.min.js') }}"></script>
     <script src="{{ asset('backend/assets/js/core/bootstrap.min.js') }}"></script>
     <script src="{{ asset('backend/assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ asset('backend/assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
     <script src="{{ asset('backend/assets/js/plugins/chartjs.min.js') }}"></script>
+    {{-- Select2 Plugin --}}
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <script>
         var win = navigator.platform.indexOf('Win') > -1;
@@ -67,6 +72,8 @@
     <script src="{{ asset('backend/assets/js/buttons.js') }}"></script>
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="{{ asset('backend/assets/js/argon-dashboard.min.js') }}"></script>
+
+    @stack('jsAddon')
 </body>
 
 </html>
